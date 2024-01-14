@@ -1,0 +1,39 @@
+{
+  "name": "nitra-uuid",
+  "version": "1.0.0",
+  "description": "jwt create verify",
+  "type": "module",
+  "workspaces": [
+    "demo",
+    "npm"
+  ],
+  "scripts": {
+    "d.ts": "cd npm && npx -p typescript tsc src/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types --skipLibCheck",
+    "fix": "npx eslint --fix . && npx prettier --write . "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitra/uuid.git"
+  },
+  "author": "v@nitra.ai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitra/uuid/issues"
+  },
+  "homepage": "https://github.com/nitra/uuid#readme",
+  "devDependencies": {
+    "@cspell/dict-ru_ru": "^2.0.2",
+    "@cspell/dict-uk-ua": "^1.0.20",
+    "@nitra/cspell-dict": "^1.0.118",
+    "@nitra/eslint-config": "^1.0.8",
+    "@nitra/prettier-config": "^1.0.0"
+  },
+  "prettier": "@nitra/prettier-config",
+  "packageManager": "yarn@4.0.2",
+  "eslintConfig": {
+    "extends": [
+      "@nitra"
+    ],
+    "root": true
+  }
+}

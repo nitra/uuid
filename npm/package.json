@@ -1,0 +1,31 @@
+{
+  "name": "@nitra/uuid",
+  "version": "1.0.0",
+  "description": "check header in serverless",
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "keywords": [
+    "uuidv7",
+    "export-date"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitra/uuid.git"
+  },
+  "author": "v@nitra.ai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitra/uuid/issues"
+  },
+  "homepage": "https://github.com/nitra/uuid#readme",
+  "dependencies": {
+    "uuidv7": "^0.6.3"
+  },
+  "files": [
+    "src",
+    "types"
+  ]
+}
