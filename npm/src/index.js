@@ -8,9 +8,8 @@ export * from 'uuidv7'
 
 /**
  * extract timestamp from UUID v7
- *
- * @param {String} uuid - ApolloServer or Express Request for check
- * @return {Date} extracted timestamp
+ * @param {string} uuid - ApolloServer or Express Request for check
+ * @returns {Date} extracted timestamp
  */
 export function getDate(uuid) {
   const timestampBytes = new Uint8Array(8)

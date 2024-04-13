@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/nitra/uuid#readme",
   "devDependencies": {
-    "@cspell/dict-ru_ru": "^2.0.2",
-    "@cspell/dict-uk-ua": "^1.0.20",
-    "@nitra/cspell-dict": "^1.0.118",
-    "@nitra/eslint-config": "^1.0.8",
-    "@nitra/prettier-config": "^1.0.0"
+    "@cspell/dict-ru_ru": "^2.2.1",
+    "@cspell/dict-uk-ua": "^4.0.0",
+    "@nitra/cspell-dict": "^1.0.131",
+    "@nitra/eslint-config": "^2.0.21",
+    "@nitra/prettier-config": "^1.0.1"
   },
   "prettier": "@nitra/prettier-config",
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.1.1",
   "eslintConfig": {
     "extends": [
       "@nitra"
