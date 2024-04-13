@@ -19,5 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get yarn cache directory path
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ env.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install Dependencies
+        run: yarn install
+
       - name: Eslint
         run: npx eslint .
