@@ -29,11 +29,5 @@
     "@nitra/prettier-config": "^1.0.1"
   },
   "prettier": "@nitra/prettier-config",
-  "packageManager": "yarn@4.1.1",
-  "eslintConfig": {
-    "extends": [
-      "@nitra"
-    ],
-    "root": true
-  }
+  "packageManager": "yarn@4.2.2"
 }
